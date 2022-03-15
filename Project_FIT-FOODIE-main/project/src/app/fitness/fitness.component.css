@@ -1,0 +1,41 @@
+mat-toolbar {
+    justify-content: space-between;
+}
+
+/* .content {
+    padding: 16px;
+}
+
+.content > mat-card {
+    margin-bottom: 16px;
+} */
+
+.parent{
+    border : 1px white;
+    margin : 1rem;
+    padding: 3rem 3rem;
+    text-align: center;
+    background-color: rgb(224, 205, 255); 
+}
+.child{
+    display : inline-block;
+    border: 25px rgb(12, 12, 12);
+    padding: 1rem 1rem;
+    vertical-align: auto;
+}
+.child1{
+    display : inline-block;
+    border: 5px salmon;
+    padding: 3rem 3rem;
+    vertical-align: auto;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+} 
+.body-review:hover{
+    transform: translateY(-20px);
+    transition: all ease 0.1s;
+}

@@ -1,0 +1,37 @@
+<!-- <input type="text" placeholder="NAME" [(ngModel)]='user.uname'><br/>
+<input type="text" placeholder="EMAIL" [(ngModel)]='user.email'><br/>
+<input type="password" placeholder="PASSWORD" [(ngModel)]='user.password'><br/>
+
+<input type="submit" value="REGISTER" (click)="registerUser()"> -->
+
+<!DOCTYPE html>
+  <html>
+    <body>
+    <div class="main">
+      <!-- <div class="regform"><h1>Registration Form</h1></div> -->
+          <div id="name">
+
+            <div class="center">
+              <h1><b>Registration Form</b></h1>
+            </div>
+
+            <h2 class="name">User Name</h2>
+            <input class="uname" type="text" name="uname" [(ngModel)]='user.uname' required><br>
+            
+            <h2 class="name">Email</h2>
+          <input class="email" type="text" name="email" [(ngModel)]='user.email' #cpass1="ngModel"  pattern="[^ @]*@[^ @]*" required >
+          <label for="email"></label>
+        
+          <h2 class="name">Password</h2>
+          <input class="password" type="password" name="password" [(ngModel)]='user.password' required>
+
+          <h2 class="name"></h2>
+           <input class="btn1" type="submit" value = "Register" (click)="registerUser()">
+           <br>
+           <br>
+           <a routerLink="/login" class="anchorlink">Have an account?</a>
+    </div>
+    </div>
+  </body>
+</html>
+  
